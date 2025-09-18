@@ -1,0 +1,17 @@
+# Config file for PolarDB-X C++ Driver
+# It defines the following variables:
+#   POLARDBX_DRIVER_FOUND - indicates that the module was found
+#   POLARDBX_DRIVER_INCLUDE_DIRS - include directories
+#   POLARDBX_DRIVER_LIBRARIES - libraries to link against
+
+@PACKAGE_INIT@
+
+include("${CMAKE_CURRENT_LIST_DIR}/PolardbxDriverTargets.cmake")
+
+check_required_components(PolardbxDriver)
+
+# Set include directories
+set_and_check(POLARDBX_DRIVER_INCLUDE_DIRS "${PACKAGE_PREFIX_DIR}/include/polardbx-driver")
+
+# Set libraries
+set(POLARDBX_DRIVER_LIBRARIES polardbxdriver)

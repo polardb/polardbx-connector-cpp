@@ -1,0 +1,12 @@
+# Package configuration file for PolarDB-X C++ Driver
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/polardbx-driver
+
+Name: PolarDB-X C++ Driver
+Description: High-availability C++ driver for PolarDB-X
+Version: @POLARDBX_VERSION_MAJOR@.@POLARDBX_VERSION_MINOR@.@POLARDBX_VERSION_PATCH@
+Requires: 
+Libs: -L${libdir} -lpolardbxdriver
+Cflags: -I${includedir}
