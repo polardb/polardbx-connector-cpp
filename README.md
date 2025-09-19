@@ -4,7 +4,6 @@ This is a high-availability C++ driver for PolarDB-X. The features implemented s
 - [x] Automatically reconnects to the new leader node after switching
 - [x] Supports read-write separation
 - [ ] Supports CoreDNS
-- [x] Built-in `polardbx` driver keyword
 - [ ] Supports transparent switching
 - [x] Supports `COM_PING` for HA checks
 - [x] Supports Load Balancing (random or leastConn)
